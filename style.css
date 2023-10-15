@@ -335,7 +335,7 @@ section .content{
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
 }
-.curriculum .curriculum-details{
+.portfolio .portfolio-details{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -368,16 +368,16 @@ section .title span::after{
   left: 50%;
   transform: translateX(-50%);
 }
-.curriculum .curriculum-details .left{
+.portfolio .portfolio-details .left{
   width: 45%;
 }
-.curriculum .left img{
+.portfolio .left img{
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 12px;
 }
-.curriculum-details .right{
+.portfolio-details .right{
   width: 55%;
 }
 section  .topic{
@@ -386,7 +386,7 @@ section  .topic{
   font-weight: 500;
   margin-bottom: 10px;
 }
-.curriculum-details .right p{
+.portfolio-details .right p{
   text-align: justify;
   color: #0E2431;
 }
@@ -411,59 +411,98 @@ section .button button:hover{
   color: #4070f4;
 }
 
+/*Timeline*/
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
  /* My Skills CSS */
- .portfolio{
+ .curriculum{
    background: #F0F8FF;
  }
- .portfolio .content{
+ .curriculum .content{
    padding: 40px 0;
  }
- .portfolio .portfolio-details{
+ .curriculum .curriculum-details{
    display: flex;
    justify-content: space-between;
    align-items: center;
  }
- .portfolio-details .text{
+ .curriculum-details .text{
    width: 50%;
  }
- .portfolio-details p{
+ .curriculum-details p{
    color: #0E2431;
    text-align: justify;
  }
-.portfolio .portfolio-details .experience{
-  display: flex;
-  align-items: center;
-  margin: 0 10px;
-}
-.portfolio-details .experience .num{
-  color: #0E2431;
-  font-size: 80px;
-}
-.portfolio-details .experience .exp{
-  color: #0E2431;
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 6px;
-}
-.portfolio-details .boxes{
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.portfolio-details .box{
-  width: calc(100% / 2 - 20px);
-  margin: 20px 0;
-}
-.portfolio-details .boxes .topic{
-  font-size: 20px;
-  color: #4070f4;
-}
-.portfolio-details .boxes .per{
-  font-size: 60px;
-  color: #4070f4;
-}
+
+
+
 
 
 /* Contact Me CSS */
