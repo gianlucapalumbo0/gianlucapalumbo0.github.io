@@ -412,67 +412,158 @@ section .button button:hover{
 }
 
 /*Timeline*/
-.timeline {
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 1fr 3px 1fr;
-  font-family: "Fira Sans", sans-serif;
-  color: #000;
+.frame-container {
+  width: 400px; /* Larghezza della cornice */
+  height: 600px; /* Altezza della cornice */
+  overflow: auto; /* Abilita la barra di scorrimento */
+  border: 2px solid #ccc; /* Aggiungi un bordo alla cornice */
 }
 
-.timeline__component {
-  margin: 0 20px 20px 20px;
+.contenuto-barra {
+  width: 600px; /* Larghezza del contenuto, maggiore della cornice */
+  height: 300px; /* Altezza del contenuto, maggiore della cornice */
+  background-color: #f0f0f0; /* Sfondo del contenuto */
 }
 
-.timeline__component--bg {
-  padding: 1.5em;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+div.item {
+  display: flex;
+  flex: auto;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
-/* LEAVE TILL LAST */
-.timeline__component--bottom {
+#timeline {
+  position: relative;
+  display: table; /* Per Firefox */
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+#timeline div:after {
+  content: '';
+  width: 2px;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0;
+  left: 60px;
+  z-index: 1;
+  background: #C5C5C5;
+}
+
+#timeline h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  color: #888;
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media (min-width: 62em) {
+  #timeline h3 {
+    font-size: 1.1em;
+  }
+}
+
+#timeline section.year {
+  position: relative;
+}
+
+#timeline section.year:first-child section {
+  margin-top: -1.3em;
+  padding-bottom: 0;
+}
+
+#timeline section {
+  position: relative;
+  padding-bottom: 1.25em;
+  margin-bottom: 2.2em;
+}
+
+#timeline section h4 {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0 0 0 89px;
+  color: #C5C5C5;
+}
+
+@media (min-width: 62em) {
+  #timeline section h4 {
+    font-size: 1em;
+  }
+}
+
+#timeline section ul {
+  list-style-type: none;
+  padding: 0 0 0 75px;
+  margin: -1.35rem 0 1em;
+  max-width: 32rem;
+  font-size: 1em;
+}
+
+@media (min-width: 62em) {
+  #timeline section ul {
+    font-size: 1.1em;
+    padding: 0 0 0 81px;
+  }
+}
+
+#timeline section ul:last-child {
   margin-bottom: 0;
 }
 
-.timeline__middle {
-  position: relative;
-  background: #D1D6E6;
-}
-
-.timeline__point {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15px;
-  height: 15px;
-  background: #3aa8db;
+#timeline section ul:first-of-type:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #C5C5C5;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
+  position: absolute;
+  left: 54px;
+  top: 3px;
+  z-index: 2;
 }
 
-/* LEAVE TILL LAST */
-.timeline__point--bottom {
-  top: initial;
-  bottom: 0;
+#timeline section ul li {
+  margin-left: 0.5rem;
 }
 
-.timeline__date--right {
-  text-align: right;
+#timeline section ul li:before {
+  content: '·';
+  margin-left: -0.5rem;
+  padding-right: 0.3rem;
 }
 
-.timeline__title {
-  margin: 0;
-  font-size: 1.15em;
-  font-weight: bold;
+#timeline section ul li:not(:first-child) {
+  margin-top: 0.5rem;
 }
 
-.timeline__paragraph {
-  line-height: 1.5;
+#timeline section ul li span.price {
+  color: mediumturquoise;
+  font-weight: 500;
 }
+
+
+/*da controllare*/
+.curriculum-details {
+  display: flex;
+  justify-content: space-between; /* Distribuisce in modo uniforme le tre sezioni */
+}
+
+.aboutme, .education, .experiences {
+  flex: 1; /* Fanno sì che le sezioni occupino la stessa quantità di spazio disponibile */
+  margin: 10px; /* Imposta il margine tra le sezioni */
+}
+
+
+
 
 
 
