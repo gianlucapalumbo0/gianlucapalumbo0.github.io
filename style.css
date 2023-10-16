@@ -419,7 +419,7 @@ section .button button:hover{
   display: grid;
   grid-template-columns: 1fr 3px 1fr;
   font-family: "Fira Sans", sans-serif;
-  color: #ffffff;
+  color: #000;
 }
 
 .timeline__component {
@@ -440,7 +440,7 @@ section .button button:hover{
 
 .timeline__middle {
   position: relative;
-  background: #ffffff;
+  background: #D1D6E6;
 }
 
 .timeline__point {
@@ -450,7 +450,7 @@ section .button button:hover{
   transform: translateX(-50%);
   width: 15px;
   height: 15px;
-  background: #ffffff;
+  background: #3aa8db;
   border-radius: 50%;
 }
 
