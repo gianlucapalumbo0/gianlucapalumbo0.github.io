@@ -432,14 +432,14 @@ section .button button:hover{
 
 /*Timeline*/
 .frame-container {
-  width: 400px; /* Larghezza della cornice */
-  height: 600px; /* Altezza della cornice */
+  width: 300px; /* Larghezza della cornice */
+  height: 400px; /* Altezza della cornice */
   /*border: 2px solid #ccc;  Aggiungi un bordo alla cornice */
   overflow: auto;
 }
 
 .contenuto-barra {
-  width: 600px; /* Larghezza del contenuto, maggiore della cornice */
+  width: 200px; /* Larghezza del contenuto, maggiore della cornice */
   height: 300px; /* Altezza del contenuto, maggiore della cornice */
 }
 
@@ -557,15 +557,10 @@ div.item {
   padding: 0 0 0 75px;
   margin: -1.35rem 0 1em;
   max-width: 32rem;
-  font-size: 1em;
+  font-size: 11px;/*1em*/
 }
 
-@media (min-width: 62em) {
-  #timeline section ul {
-    font-size: 1.1em;
-    padding: 0 0 0 81px;
-  }
-}
+
 
 #timeline section ul:last-child {
   margin-bottom: 0;
@@ -589,7 +584,7 @@ div.item {
 }
 
 #timeline section ul li:before {
-  content: '·';
+  /*content: '·';*/
   margin-left: -0.5rem;
   padding-right: 0.3rem;
 }
@@ -841,7 +836,7 @@ footer .text span a:hover{
 ================================================================================ */
 #skills-animation {
   margin: 0 auto;
-  width: 130%;
+  width: 100%;
   max-width: 960px;
 }
 
@@ -862,7 +857,7 @@ footer .text span a:hover{
 
 #skills-animation li .bar-container {
   bottom: -8px;
-  width: 100%;
+  width: 90%;
   background-color: #333;
   text-align: right;
 }
