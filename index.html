@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <title>Responsive Portfolio Website HTML CSS| CodingNepal</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,9 +22,9 @@
         <div class="logo"><a href="#">Portfolio.</a></div>
         <ul class="menu">
           <li><a href="#home">Home</a></li>
-          <li><a href="#curriculum">Curriculum</a></li>
-          <li><a href="#portfolio">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
@@ -72,10 +74,10 @@
 
     <!-- My Skill Section Start -->
     <!-- Section Tag and Other Div will same where we need to put same CSS -->
-    <section class="curriculum" id="curriculum">
+    <section class="about" id="about">
       <div class="content">
-        <div class="title"><span>Curriculum</span></div>
-        <div class="curriculum-details">
+        <div class="title"><span>About</span></div>
+        <div class="about-details">
 
           <div class="aboutme">
           <div class="text">
@@ -198,16 +200,195 @@
       </div>
     </section>
     
+    
+    <!-- About Section Start /*About*/-->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>Skills</span></div>
+        <div class="skills-details">
 
+
+          <div class="skillsme">
+            <div class="text">
+              <div class="profile-icon">
+                <i class="fas fa-user"></i> <!-- Questo è l'icona di utente -->
+              </div>
+              <div class="topic">Coding</div>
+
+
+              <ul id="skills-animation">  
+                <li>
+                  HTML
+                  <div class="bar-container">
+                    <span class="bar" data-bar='{ "color": "#19f" }'>
+                      <span class="pct">82%</span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  CSS
+                  <div class="bar-container">
+                    <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }'>
+                      <span class="pct">100%</span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  PHP
+                  <div class="bar-container">
+                    <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                      <span class="pct">60%</span>
+                    </span>
+                  </div>
+                </li>
+                <li>
+                  SQL
+                  <div class="bar-container">
+                    <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+                      <span class="pct">30%</span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+
+
+
+
+
+
+              <div class="languages">
+                <div class="text">
+                  <div class="profile-icon">
+                    <i class="fas fa-briefcase"></i> <!-- Questo è l'icona di utente -->
+                  </div>
+                  <div class="topic">Languages</div>
+    
+                  <div class="frame-container">
+                    <div class="contentenuto-barra">
+                      <div class="item">
+                        <div id="timeline">
+                          <div>
+                            <section class="year">
+                              <h3>2007</h3>
+                              <section>
+                                <ul>
+                                  <li>Satoshi Nakamoto began working on the Bitcoin concept.</li>
+                                </ul>
+                              </section>
+                            </section>
+                            <section class="year">
+                              <h3>2008</h3>
+                              <section>
+                                <h4>August</h4>
+                                <ul>
+                                  <li>Neal Kin, Vladimir Oksman, and Charles Bry file an application for an encryption patent application.</li>
+                                  <li>Bitcoin.org was registered at <a href="https://anonymousspeech.com/">anonymousspeech.com</a>.</li>
+                                </ul>
+                              </section>
+                              <section>
+                                <h4>October</h4>
+                                <ul>
+                                  <li>Nakamoto describes the Bitcoin currency and solves the problem of double spending.</li>
+                                </ul>
+                              </section>
+                              <section>
+                                <h4>November</h4>
+                                <ul>
+                                  <li>The Bitcoin project is registered on <a href="https://sourceforge.net/">SourceForge.net</a>.</li>
+                                </ul>
+                              </section>
+                            </section>
+                            <!-- Altri anni e sezioni qui -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+    
+                </div>
+              </div>
+
+
+              <div class="software">
+                <div class="text">
+                  <div class="profile-icon">
+                    <i class="fas fa-briefcase"></i> <!-- Questo è l'icona di utente -->
+                  </div>
+                  <div class="topic">Tools</div>
+    
+                  <div class="frame-container">
+                    <div class="contentenuto-barra">
+                      <div class="item">
+                        <div id="timeline">
+                          <div>
+                            <section class="year">
+                              <h3>2007</h3>
+                              <section>
+                                <ul>
+                                  <li>Satoshi Nakamoto began working on the Bitcoin concept.</li>
+                                </ul>
+                              </section>
+                            </section>
+                            <section class="year">
+                              <h3>2008</h3>
+                              <section>
+                                <h4>August</h4>
+                                <ul>
+                                  <li>Neal Kin, Vladimir Oksman, and Charles Bry file an application for an encryption patent application.</li>
+                                  <li>Bitcoin.org was registered at <a href="https://anonymousspeech.com/">anonymousspeech.com</a>.</li>
+                                </ul>
+                              </section>
+                              <section>
+                                <h4>October</h4>
+                                <ul>
+                                  <li>Nakamoto describes the Bitcoin currency and solves the problem of double spending.</li>
+                                </ul>
+                              </section>
+                              <section>
+                                <h4>November</h4>
+                                <ul>
+                                  <li>The Bitcoin project is registered on <a href="https://sourceforge.net/">SourceForge.net</a>.</li>
+                                </ul>
+                              </section>
+                            </section>
+                            <!-- Altri anni e sezioni qui -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+    
+                </div>
+              </div>
+
+
+
+
+            </div>
+            </div>
+
+
+          
+
+
+        </div>
+        </div>
+      </div>
+    </section>
 
 
 
 
     <!-- About Section Start /*About*/-->
-    <section class="portfolio" id="portfolio">
+    <section class="project" id="project">
       <div class="content">
         <div class="title"><span>Portfolio</span></div>
-        <div class="portfolio-details">
+        <div class="project-details">
           <div class="left">
             <img src="home_photo.jpg" alt="" />
           </div>

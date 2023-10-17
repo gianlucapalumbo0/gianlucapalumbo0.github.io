@@ -337,7 +337,7 @@ section .content{
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
 }
-.portfolio .portfolio-details{
+.project .project-details{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -370,16 +370,16 @@ section .title span::after{
   left: 50%;
   transform: translateX(-50%);
 }
-.portfolio .portfolio-details .left{
+.project .project-details .left{
   width: 45%;
 }
-.portfolio .left img{
+.project .left img{
   height: 400px;
   width: 400px;
   object-fit: cover;
   border-radius: 12px;
 }
-.portfolio-details .right{
+.project-details .right{
   width: 55%;
 }
 section  .topic{
@@ -388,7 +388,7 @@ section  .topic{
   font-weight: 500;
   margin-bottom: 10px;
 }
-.portfolio-details .right p{
+.project-details .right p{
   text-align: justify;
   color: #0E2431;
 }
@@ -612,6 +612,25 @@ div.item {
 }
 
 
+ /*About me*/
+ .about{
+  background: #F0F8FF;
+}
+.about .content{
+  padding: 40px 0;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+.about-details .text{
+  width: 50%;
+}
+.about-details p{
+  color: #0E2431;
+  text-align: justify;
+}
 
 
 
@@ -620,26 +639,34 @@ div.item {
 
 
 
-
- /* My Skills CSS */
- .curriculum{
+ /*Skills */
+ .skills{
    background: #F0F8FF;
  }
- .curriculum .content{
+ .skills .content{
    padding: 40px 0;
  }
- .curriculum .curriculum-details{
+ .skills .skills-details{
    display: flex;
    justify-content: space-between;
    /*align-items: center;*/
  }
- .curriculum-details .text{
+ .skills-details .text{
    width: 50%;
  }
- .curriculum-details p{
+ .skills-details p{
    color: #0E2431;
    text-align: justify;
  }
+
+ .skillsme, .languages, .software {
+  flex: 1; /* Fanno sì che le sezioni occupino la stessa quantità di spazio disponibile */
+  margin: 10px; /* Imposta il margine tra le sezioni */
+}
+
+
+
+
 
 
 
@@ -800,4 +827,54 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+
+
+
+
+/*Skills*/
+.skills ul {
+  list-style-type: none;
+}
+
+/*  3. Skills
+================================================================================ */
+#skills-animation {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+}
+
+#skills-animation li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+}
+
+#skills-animation li .bar-container,
+#skills-animation li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+
+#skills-animation li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+
+#skills-animation li .bar {
+  top: 0;
+}
+
+#skills-animation li .pct {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
 }
