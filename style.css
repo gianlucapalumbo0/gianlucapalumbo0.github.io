@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
 }
 
-/* Custom Scroll Bar CSS */
+/* Custom Scroll Bar CSS 
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -24,6 +24,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #4070f4;
 }
+*/
+
 /* navbar styling */
 nav{
   position: fixed;
@@ -411,19 +413,70 @@ section .button button:hover{
   color: #4070f4;
 }
 
+
+/*Icone*/
+/* Stile di base per l'elemento con classe "profile-icon" */
+.profile-icon {
+  display: inline-block; /* Imposta l'elemento come "inline-block" per adattarsi al contenuto */
+  font-size: 40px; /* Imposta la dimensione del carattere dell'icona */
+  color: #333; /* Cambia il colore dell'icona */
+}
+
+/* Stile quando il mouse passa sopra l'icona */
+.profile-icon i:hover {
+  color: #007BFF; /* Cambia il colore dell'icona quando il mouse passa sopra */
+}
+
+
+
+
 /*Timeline*/
 .frame-container {
   width: 400px; /* Larghezza della cornice */
   height: 600px; /* Altezza della cornice */
-  overflow: auto; /* Abilita la barra di scorrimento */
-  border: 2px solid #ccc; /* Aggiungi un bordo alla cornice */
+  /*border: 2px solid #ccc;  Aggiungi un bordo alla cornice */
+  overflow: auto;
 }
 
 .contenuto-barra {
   width: 600px; /* Larghezza del contenuto, maggiore della cornice */
   height: 300px; /* Altezza del contenuto, maggiore della cornice */
-  background-color: #f0f0f0; /* Sfondo del contenuto */
 }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera 
+.frame-container::-webkit-scrollbar {
+  /*display: none;
+
+}*/
+
+/* Hide scrollbar for IE, Edge and Firefox 
+.frame-container {
+-ms-overflow-style: none;  /* IE and Edge 
+scrollbar-width: none;  /* Firefox 
+}
+*/
+
+
+.frame-container::-webkit-scrollbar {
+  width: 5px;
+}
+.frame-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.frame-container::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.frame-container::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+
+
+
 
 div.item {
   display: flex;
@@ -551,11 +604,7 @@ div.item {
 }
 
 
-/*da controllare*/
-.curriculum-details {
-  display: flex;
-  justify-content: space-between; /* Distribuisce in modo uniforme le tre sezioni */
-}
+
 
 .aboutme, .education, .experiences {
   flex: 1; /* Fanno sì che le sezioni occupino la stessa quantità di spazio disponibile */
@@ -582,7 +631,7 @@ div.item {
  .curriculum .curriculum-details{
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   /*align-items: center;*/
  }
  .curriculum-details .text{
    width: 50%;
