@@ -680,17 +680,25 @@ div.item {
   cursor: pointer;
   transition: 0.4s;
 }
-
+/*
 .card .card_image {
   width: inherit;
   height: inherit;
   border-radius: 40px;
 }
+*/
+
+.card .card_image {
+  display: flex;
+  justify-content: center; /* Centro orizzontalmente */
+  align-items: center; /* Centro verticalmente */
+  width: 100px;
+  height: 100px;
+}
 
 .card .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
 }
 
@@ -716,6 +724,17 @@ div.item {
 
 .title-black {
   color: black;
+}
+
+/* Stile per .card_text, inizialmente nascosto */
+.card_text {
+  display: none;
+}
+
+/* Stile per .card quando passi il mouse sopra di esso */
+.card:hover .card_text {
+  display: block; /* Visualizza il testo quando il mouse è sopra .card */
+  text-align: center;
 }
 
 @media all and (max-width: 500px) {
